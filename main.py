@@ -1,20 +1,20 @@
+from cliente import Cliente
 from servicio import ReservaSala
-from servicio import AlquilerEquipo
-from servicio import AsesoriaEspecializada
+from reserva import Reserva
 
 
-sala = ReservaSala(2)
+cliente1 = Cliente("Jose", "123")
 
-equipo = AlquilerEquipo(3)
+servicio1 = ReservaSala(2)
 
-asesoria = AsesoriaEspecializada(1)
+reserva1 = Reserva(cliente1, servicio1)
 
 
-print(sala.descripcion())
-print(sala.calcular_costo())
+print(reserva1.mostrar_reserva())
 
-print(equipo.descripcion())
-print(equipo.calcular_costo())
+print("Costo total:", reserva1.calcular_total())
 
-print(asesoria.descripcion())
-print(asesoria.calcular_costo())
+
+reserva1.confirmar()
+
+print("Estado actual:", reserva1.estado)
