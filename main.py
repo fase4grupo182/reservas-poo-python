@@ -1,6 +1,20 @@
-# main.py
-# Este archivo es el punto de entrada del programa.
-# Aquí se deben crear objetos de Cliente, Servicio y Reserva.
-# También se deben simular al menos 10 operaciones (válidas e inválidas).
-# Se debe probar el funcionamiento del sistema completo.
-# Se deben manejar errores usando try/except para evitar que el programa se detenga.
+from servicio import ReservaSala
+from servicio import AlquilerEquipo
+from servicio import AsesoriaEspecializada
+
+
+sala = ReservaSala(2)
+
+equipo = AlquilerEquipo(3)
+
+asesoria = AsesoriaEspecializada(1)
+
+
+print(sala.descripcion())
+print(sala.calcular_costo())
+
+print(equipo.descripcion())
+print(equipo.calcular_costo())
+
+print(asesoria.descripcion())
+print(asesoria.calcular_costo())
