@@ -1,8 +1,11 @@
 # reserva.py
-
 class Reserva:
 
     def __init__(self, cliente, servicio):
+        if cliente is None:
+            raise ErrorReserva("Debe excistir un cliente.")
+        if servicio is None:
+            raise ErrorReserva("Debe excistir un servicio.")
 
         self.cliente = cliente
         self.servicio = servicio
