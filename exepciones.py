@@ -7,10 +7,7 @@
 # - ErrorReserva
 # Todas deben heredar de Exception.
 class ErrorSistemaFJ(Exception):
-    """Excepción base del sistema. Todas las excepciones heredan de aquí."""
     def __init__(self, mensaje: str, codigo: str = "ERR-000"):
-        self.mensaje = mensaje
-        self.codigo = codigo
         super().__init__(f"[{codigo}] {mensaje}")
 
 
