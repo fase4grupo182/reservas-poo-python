@@ -1,11 +1,5 @@
 # excepciones.py
-# Aquí se definen excepciones personalizadas.
-# Estas clases permiten manejar errores específicos del sistema.
-# Ejemplos:
-# - ErrorCliente
-# - ErrorServicio
-# - ErrorReserva
-# Todas deben heredar de Exception.
+
 class ErrorSistemaFJ(Exception):
     def __init__(self, mensaje: str, codigo: str = "ERR-000"):
         super().__init__(f"[{codigo}] {mensaje}")

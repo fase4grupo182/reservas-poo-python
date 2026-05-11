@@ -1,3 +1,0 @@
-Este archivo almacena los errores y eventos del sistema.
-Aquí se guardan automáticamente los mensajes generados por el programa.
-No debe modificarse manualmente.

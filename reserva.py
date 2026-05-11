@@ -1,11 +1,14 @@
 # reserva.py
+
+from excepciones import ErrorReserva
+
 class Reserva:
 
     def __init__(self, cliente, servicio):
         if cliente is None:
-            raise ErrorReserva("Debe excistir un cliente.")
+            raise ErrorReserva("Debe existir un cliente.")
         if servicio is None:
-            raise ErrorReserva("Debe excistir un servicio.")
+            raise ErrorReserva("Debe existir un servicio.")
 
         self.cliente = cliente
         self.servicio = servicio
